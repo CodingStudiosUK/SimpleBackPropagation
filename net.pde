@@ -17,7 +17,7 @@ void draw() {
 }
 import java.lang.Math;
 float sig(float x) {
-  return 1/(1+pow((float)Math.E, -x));
+  return 1/(1+pow((float)Math.E, -0.5*x));
 }
 float deriv(float x) {
   return sig(x)*(1-sig(x));

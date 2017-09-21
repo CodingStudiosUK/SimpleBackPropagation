@@ -20,19 +20,19 @@ void keyPressed() {
   if (!test) {
     correctionTimer = 0;
     switch (key) {
-    case 'w':
+    case 'q':
       inputs[0] = 0;
       inputs[1] = 0;
       break;
-    case 'a':
+    case 'w':
       inputs[0] = 1;
       inputs[1] = 0;
       break;
-    case 's':
+    case 'e':
       inputs[0] = 1;
       inputs[1] = 1;
       break;
-    case 'd':
+    case 'r':
       inputs[0] = 0;
       inputs[1] = 1;
       break;

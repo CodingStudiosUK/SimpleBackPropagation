@@ -3,7 +3,7 @@ int right = 0, total = 0, timer = 0;
 boolean test = false;
 void test() {
   output = b.propForward(inputs);
-  if (round(target)!=round(output)) {
+  if (round(target)!=round(output) && LIMIT > 5) {
     frameCount = -2;
   }
   if (frameCount < 0) {
@@ -20,7 +20,7 @@ void test() {
     total++;
     inputs[0] = int(random(0, 2));
     inputs[1] = int(random(0, 2));
-    target = (int(inputs[0])^int(inputs[1]))==0?0:1;
+    target = (int(inputs[0])^int(inputs[1]))==0?0:1; //IF statement necessary???
     timer = 0;
     if (right%100==99&&LIMIT>1) {
       LIMIT--;
